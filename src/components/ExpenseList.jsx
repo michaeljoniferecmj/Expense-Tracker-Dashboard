@@ -20,7 +20,7 @@ function groupByMonth(expenses) {
 function ExpenseList({ expenses, onDelete, onUpdate }) {
   if (expenses.length === 0) {
     return (
-      <div className="bg-background-muted p-6 rounded-xl border border-border text-center text-text-muted">
+      <div className="bg-background-muted dark:bg-gray-800 p-6 rounded-xl border border-border dark:border-gray-700 text-center text-text-muted dark:text-gray-300">
         No expenses found
       </div>
     );
@@ -29,11 +29,11 @@ function ExpenseList({ expenses, onDelete, onUpdate }) {
   const groupedExpenses = groupByMonth(expenses);
 
   return (
-    <div className="bg-background-muted rounded-xl border border-border p-4">
+    <div className="bg-background-muted dark:bg-gray-800 rounded-xl border border-border dark:border-gray-700 p-4">
       <div className="lg:max-h-[520px] overflow-y-auto pr-1 space-y-6">
         {Object.entries(groupedExpenses).map(([month, items]) => (
           <div key={month}>
-            <h3 className="text-sm font-semibold text-text-muted mb-3">
+            <h3 className="text-sm font-semibold text-text-muted dark:text-gray-300 mb-3">
               {month}
             </h3>
 

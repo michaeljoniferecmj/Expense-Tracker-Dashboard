@@ -28,14 +28,19 @@ function ExpenseForm({ onAdd }) {
   }
 
   return (
-    <div className="bg-background-muted p-6 rounded-xl border border-border">
+    <div className="bg-background-muted dark:bg-gray-800 p-6 rounded-xl border border-border dark:border-gray-700">
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
           type="text"
           placeholder="Expense title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="p-3 rounded-md bg-background border border-border"
+          className="p-3 rounded-md
+           bg-background dark:bg-gray-900
+           text-text dark:text-gray-100
+           placeholder-text-muted dark:placeholder-gray-400
+           border border-border dark:border-gray-700
+           outline-none focus:ring-2 focus:ring-primary"
         />
 
         <input
@@ -43,13 +48,23 @@ function ExpenseForm({ onAdd }) {
           placeholder="Amount"
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
-          className="p-3 rounded-md bg-background border border-border"
+          className="p-3 rounded-md
+           bg-background dark:bg-gray-900
+           text-text dark:text-gray-100
+           placeholder-text-muted dark:placeholder-gray-400
+           border border-border dark:border-gray-700
+           outline-none focus:ring-2 focus:ring-primary"
         />
 
         <select
           value={category}
           onChange={(e) => setCategory(e.target.value)}
-          className="p-3 rounded-md bg-background border border-border"
+          className="p-3 rounded-md
+           bg-background dark:bg-gray-900
+           text-text dark:text-gray-100
+           placeholder-text-muted dark:placeholder-gray-400
+           border border-border dark:border-gray-700
+           outline-none focus:ring-2 focus:ring-primary"
         >
           {CATEGORIES.map((cat) => (
             <option key={cat}>{cat}</option>
@@ -60,7 +75,12 @@ function ExpenseForm({ onAdd }) {
           type="date"
           value={date}
           onChange={(e) => setDate(e.target.value)}
-          className="p-3 rounded-md bg-background border border-border"
+          className="p-3 rounded-md
+           bg-background dark:bg-gray-900
+           text-text dark:text-gray-100
+           placeholder-text-muted dark:placeholder-gray-400
+           border border-border dark:border-gray-700
+           outline-none focus:ring-2 focus:ring-primary cursor-pointer"
         />
 
         <button

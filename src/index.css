@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    transition: background-color 200ms ease, color 200ms ease,
+      border-color 200ms ease;
+  }
+}
+/* Fix calendar icon color in dark mode */
+.dark input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
