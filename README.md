@@ -5,6 +5,11 @@
 ![Vite](https://img.shields.io/badge/Vite-fast-purple?logo=vite)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
+## 🌐 Live Demo
+
+https://expense-tracker-dashboard.vercel.app
+
+
 
 # React + Vite
 
