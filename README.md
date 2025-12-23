@@ -1,3 +1,11 @@
+# Expense Tracker Dashboard
+
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3-blue?logo=tailwindcss)
+![Vite](https://img.shields.io/badge/Vite-fast-purple?logo=vite)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
